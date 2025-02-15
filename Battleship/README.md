@@ -13,3 +13,5 @@ This was a group project I was a part of. The other members of the team who crea
 
 This project was done in Java, using JavaFX to create the GUI.
 
+Note: There are a lot of image files, if you would like to see the code itself, just look for the .java files! :)
+
