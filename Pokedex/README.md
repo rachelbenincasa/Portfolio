@@ -6,4 +6,4 @@ Some site features:
 - Displays detailed Pokemon card with sprite is clicked. This includes name, type, HP, and moves
 - Created a game view where uses choose a Pokemon and battle an opponent
 
-This was built with HTML, CSS, and Javascript. However, the HTML and CSS were given for this project, and I wrote the JavaScript!
+This was built with HTML, CSS, and Javascript. However, the HTML and CSS were given for this project, and I wrote the JavaScript! (pokedex.js)
