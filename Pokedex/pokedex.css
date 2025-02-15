@@ -1,7 +1,4 @@
-/*
- * Provided stylesheet for HW 3: Pokedex Assignment
- * DO NOT MODIFY THIS CSS.
- */
+
 body, button {
   color: #222;
   font-family: 'Century Gothic', 'Helvetica', sans-serif;
@@ -66,7 +63,7 @@ h2 {
 
 .card {
   height: 520px;
-  position: relative; /* for weakness icon positioning */
+  position: relative; 
 }
 
 .card-container {
@@ -103,7 +100,7 @@ h2 {
 }
 
 #results-container {
-  margin-left: 50px; /* to balance centering with #p2 buffs container */
+  margin-left: 50px;
   margin-right: 0;
   margin-top: 80px;
   text-align: center;
@@ -126,7 +123,6 @@ h2 {
   position: absolute;
 }
 
-/* Move Button Styles */
 .moves {
   font-size: 12pt;
   margin: auto auto;
@@ -146,7 +142,6 @@ h2 {
   width: 100%;
 }
 
-/* Only apply interactive cues on p1 moves */
 #p1 .moves button:hover {
   background-color: #ccc;
 }
