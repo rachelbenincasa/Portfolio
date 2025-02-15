@@ -1,0 +1,33 @@
+<!--
+  My idea for this page is that when you click on an individual movie, this page will show up
+  and we can fill in all of the info about the specific movie using js and node by getting it from
+  the database and changing the p values to equal whatever the specific movies characteristics are
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Current Movie</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="currentmoviestyle.css">
+  </head>
+    <body>
+    <h1 id="currenttitle"></h1>
+    <!--need to add image too-->
+    <p id="currentrating"></p>
+    <p id="currentactors"></p>
+    <p id="currentuserrating"></p>
+    <div id="ratingdiv">
+      <p>Add A Rating! (Response needs to be 0, 1, 2, 3, 4, or 5)</p>
+      <input id="addedrating">
+      <button id="addnewrating" onclick="addRating()">Add new Rating!</button>
+    </div>
+    <div id="reviewdiv">
+      <p>Add a Review!</p>
+      <input id="addedreview">
+      <button id="addnewreview" onclick="addReview()">Add new Review!</button>
+    </div>
+    <div id="currentuserreviews"></div>
+    <script src="code.js"></script>
+  </body>
+</html>

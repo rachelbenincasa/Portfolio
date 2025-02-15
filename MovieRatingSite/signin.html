@@ -1,0 +1,72 @@
+<!--
+  This page is where users can log in or create password. If they log in and their username doesnt exist,
+  tell them that. if the password is wrong also tell them that. also there is a forgot password page they can
+  click that will let them answer their security question. if they want to create an account, send a request to create
+  a new user and make sure that the username doesnt already exist in the database. then log them in.
+
+-->
+
+<!-- TODO: add to the different input fields required tag-->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log-In</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="signinstyle.css">
+    <script src = 'login.js' defer> </script>
+  </head>
+
+  <h1> Welcome to VRP Movies!</h1>
+  <h3>Where you can review and build your list of movies with movie lovers from all over the world.</h3>
+  <body>
+    <div id="loginTable">
+      <table>
+        <tr>
+          <td><label for="loginusername">Username </label></td>
+          <td><input id="loginusername" required> </td>
+        </tr>
+        <tr>
+          <td><label for="loginpassword">Password: </label></td>
+          <td><input id="loginpassword" type="password" required></td>
+        </tr>
+      <tr>
+        <td><button id="signin" onclick = "setupRequestPostLogin()">Log In!</button></td>
+        <td><a href ='forgotpassword.html'>Forgot Password?</a></td>
+      </tr>
+    </table>
+    </div>
+    <div id="createTable">
+      <table>
+      <tr>
+        <td><label for="newusername">Create Username </label></td>
+        <td><input id="newusername"></td>
+      </tr>
+      <tr>
+        <td><label for="newpassword">Create Password </label></td>
+        <td><input id="newpassword" type="password"></td>
+      </tr>
+      <tr>
+        <td><label for="fullname">Full Name </label></td>
+        <td><input id="fullname"> </input></td>
+       </tr>
+      <tr>
+        <td>
+          <select id="securityQuestion" required>
+          <option value="maiden">What's Your Mother's Maiden Name?</option>
+          <option value="school">What's the name of your elementary school in kindergarden?</option>
+          <option value="pet">What's  the name of your first pet?</option>
+          </select>
+        </td>
+          <td><label for="securityanswer"> Answer </label></td>
+          <td><input id="securityanswer"></td>
+      </tr>
+      <tr>
+        <td><button id="createuser" onclick ="setupRequestPostAddUser()">Create User</button></td>
+      </tr>
+    </table>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>

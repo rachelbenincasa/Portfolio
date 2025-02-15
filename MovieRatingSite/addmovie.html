@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Movie</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="addmoviestyle.css">
+  </head>
+  <body>
+    <h1>Add Movie</h1>
+    <p>
+      Movie will only be added if there doesn't already exists
+      a movie with the same name in our database. Please check to ensure
+      this before you fill out this form!
+    </p>
+    <div>
+      <span>
+        <p>Movie Title:</p>
+        <input id="currMovieTitle">
+      </span>
+    </div>
+    <div>
+      <span>
+        <p>Rating (PG, PG-13, etc):</p>
+        <input id="currMovieRating">
+      </span>
+    </div>
+    <div>
+      <span>
+        <p>Description:</p>
+        <input id="currMovieDescription">
+      </span>
+    </div>
+    <div>
+      <span>
+        <p>Notable Actors:</p>
+        <input id="currActor1">
+        <input id="currActor2">
+        <input id="currActor3">
+      </span>
+    </div>
+    <div>
+      <span>
+        <p>Image:</p>
+        <!--need to add ability for user to select image-->
+        <input id="currImage">
+      </span>
+    </div>
+    <button id="submitNewMovie" onclick="addNewMovie()">Submit!</button>
+    <a href="index.html"><button id="goBack">Go Back to Home!</button></a>
+    <script src="code.js"></script>
+  </body>
+</html>
