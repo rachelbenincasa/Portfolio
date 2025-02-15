@@ -1,0 +1,370 @@
+/**
+Rachel Benincasa & Elizabeth Deng
+6 June 2023
+
+The CSS styling for our computer science education company. Fun and youthful. Blue and gray themed.
+HEX CODES:
+darkest blue : 001F3F
+min blue/teal: 0C7586
+light blue: 3CB8CD
+*/
+
+body {
+  background-color: ghostwhite;
+}
+
+body, p, li, select, label, #search, #age-filter {
+  font-size: 16px;
+  font-family: "Biryani", monospace;
+}
+
+header, .navlink, footer, button, #homepage, .info, .course-card, .icon-age, #courses-page {
+  display: flex;
+}
+
+header, .navlink, footer, button, #homepage, h2 {
+  font-family: 'Barrio', cursive;
+}
+
+h2 {
+  margin-left: 25px;
+  font-size: 32px;
+}
+
+#navbar, .icon-age, #coursepage1, .sidebar, .filter-option, .courses-page {
+  flex-direction: row;
+}
+
+#navbar {
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 7px;
+  margin-right: 7px;
+  background-color: antiquewhite;
+  color: rgb(7, 10, 33);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+#navbtns {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbtns, #logo {
+  height: 200px;
+}
+
+#navbtns li {
+  float: left;
+  align-self: flex-end;
+}
+
+#navbtns li, button, .course-card {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.navlink {
+  margin: 8px 15px 3px 15px;
+  font-size: 40px;
+  height: 70px;
+}
+
+.navlink, button {
+  background-color: #013971cb;
+}
+
+#logo {
+  width: auto;
+  margin: 10px 15px 10px 10px;
+}
+
+li, footer button {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+section div, .navlink, footer, button {
+  text-align: center;
+}
+
+.navlink:hover, #loginnav:hover {
+  background-color: #001f3fcb;
+}
+
+#loginnav {
+  align-self: baseline;
+  background-color: #0986accb;
+}
+
+footer {
+  width: 25%;
+  margin: 10px 500px 5px 500px;
+  justify-content: space-between;
+}
+
+footer, #homepage, .course-card, #course-head {
+  flex-direction: column;
+}
+
+footer input, footer > button, footer > p {
+  margin: 8px;
+  height: 45px;
+  font-size: 25px;
+}
+
+button {
+  padding: 8px;
+  margin: auto;
+}
+
+#homepage {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.info {
+  gap: 15px;
+  margin: 12px 17px 12px 17px;
+  border-top: #001F3F solid 1.5px;
+  border-bottom: #001F3F solid 2px;
+}
+
+#coursecards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#coursecards article {
+  background-color: #dcf1f5;
+  color: #001F3F;
+}
+
+.info p {
+  line-height: 250%;
+}
+
+.info p, .course-card h4 {
+  font-size: 17px;
+}
+
+.info p, .icon-age, .icon-age p, .course-card p {
+  align-self: center;
+}
+
+.classbtn {
+  background-color: transparent;
+  border: 1px solid #001F3F;
+  box-sizing: border-box;
+  color: #00132C;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+}
+
+.classbtn:hover {
+  background-color: transparent;
+}
+
+.classbtn:before {
+  background-color: #D5EDF6;
+  transition: background-color 300ms ease-in;
+}
+
+.classbtn:hover:before {
+  background-color: #6DCFF6;
+}
+
+.info img {
+  width: 35%;
+  margin: 8px;
+}
+
+#about-page li {
+  color: #001F3F;
+  width: 55%;
+  margin-left: 22%;
+}
+
+#about-page > img {
+  height: 25%;
+  width: auto;
+}
+
+.course-card {
+  border: 3px solid #aeabab;
+  border-radius: 7px;
+  padding: 20px;
+  width: 20%;
+  margin: 15px;
+}
+
+.icon-age img {
+  height: 100px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: 3px solid rgb(8, 12, 30);
+}
+
+.icon-age {
+  height: 15%;
+  color: #545456;
+  padding: 5px;
+  margin: 5px;
+  background-color: #3cb7cd43;
+}
+
+.icon-age, #courses-page, #course-head {
+  justify-content: space-evenly;
+}
+
+.icon-age h5 {
+  font-size: 16px;
+  font-style: italic;
+  margin: 9px;
+}
+
+h4, .course-card p {
+  margin: 4.5px 20px 4.5px 40px;
+}
+
+.classbtn, #filterbtn, #srchbtn, #back-to, #enroll-btn {
+  background-color: #001F3F;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  overflow: visible;
+  padding: 12px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.classbtn, #filterbtn, #srchbtn, #back-to {
+  margin: 0 5px 10px 0;
+}
+
+#srchbtn {
+  width: 7%;
+}
+
+#enroll-btn {
+  align-self: flex-start;
+  padding: 8px;
+  height: 50px;
+  width: 125px;
+  font-size: 20px;
+}
+
+#back-to:hover, #enroll-btn:hover {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 3px;
+  transform: translate(3px, 1px);
+  background-color: #022f5c;
+}
+
+.classbtn:hover, #filterbtn:hover, #srchbtn:hover, #back-to:hover {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+  background-color: #022f5c;
+}
+
+#courses-page {
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  padding: 10px;
+}
+
+option {
+  height: 30px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 auto;
+  height: 90px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.filter-option {
+  margin-bottom: 10px;
+}
+
+select, #age-filter {
+  margin: 2.5px;
+  padding: 5.5px;
+}
+
+select {
+  height: 40px;
+}
+
+#age-filter {
+  height: 30px;
+  font-size: 18.5px;
+}
+
+label {
+  margin: 10px;
+  font-size: 20px;
+  color: #001F3F;
+  font-weight: 400;
+}
+
+#search {
+  width: 50%;
+  height: 40px;
+  margin: 12px 40px 15px 55px;
+  padding: 7px;
+  font-size: 19.5px;
+}
+
+.details {
+  display: flex;
+  align-items: flex-start;
+}
+
+#back-to {
+  margin-right: 10px;
+}
+
+#course-head, #enroll-btn {
+  align-self: center;
+}
+
+#course-head h2 {
+  color: #001F3F;
+  font-size: 40px;
+}
+
+#course-head {
+  margin-left: 18%;
+  margin-right: 20%;
+}
+
+.hidden {
+  display: none;
+}
